@@ -109,6 +109,7 @@ h3 {
     object-fit: cover;
     display: block;
     margin: 0 auto;
+    overflow: hidden;
     box-shadow: 0 0 10px #ff8a8a;
     transition: box-shadow 0.3s ease-in-out;
     aspect-ratio: 1/1;
@@ -121,8 +122,8 @@ h3 {
   }
 
   .social_links a {
-    width: 80%;
-    max-width: 300px;
+    width: 95%;
+    max-width: 500px;
     text-align: center;
     padding: 12px;
     font-size: 16px;
