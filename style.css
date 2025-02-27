@@ -81,8 +81,14 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
   .container {
-    max-width: 90%;
+    max-width: 95%;
     padding: 20px;
     box-shadow: none;
   }
@@ -93,7 +99,7 @@ h3 {
   }
 
   .social_links a {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     text-align: center;
     font-size: 14px;
