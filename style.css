@@ -79,41 +79,41 @@ h3 {
 .social_links span {
   text-align: center;
 }
-
-/* Điều chỉnh layout trên màn hình nhỏ hơn 768px (điện thoại) */
 @media screen and (max-width: 768px) {
   body {
-    flex-direction: column; /* Sắp xếp nội dung theo chiều dọc */
+    flex-direction: column; /* Sắp xếp dọc trên điện thoại */
     padding: 10px;
   }
 
   .container {
-    max-width: 100%;
-    padding: 20px;
-    box-shadow: none; /* Giảm hiệu ứng bóng đổ */
+    max-width: 95%; /* Giữ nguyên decor nhưng vừa vặn màn hình */
+    padding: 15px;
+    box-shadow: none; /* Giảm bóng để nhẹ nhàng hơn */
   }
 
   .avt {
-    padding: 10px 0;
+    padding: 15px 0;
   }
 
   .avt_image {
     width: 100px;
     height: 100px;
-    max-width: 80%;
   }
 
   .social_links a {
-    padding: 8px 40px; /* Thu nhỏ nút bấm */
+    display: block;
+    width: 100%; /* Để nút bấm rộng hơn trên điện thoại */
+    padding: 12px;
     font-size: 14px;
   }
 
   .social_links ul {
-    padding: 10px 20px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 768px) {
   body {
-    background-size: contain; /* Hiển thị ảnh nền mà không bị cắt */
+    background-size: cover;
+    background-position: center;
   }
 }
