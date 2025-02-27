@@ -81,6 +81,9 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px; /* Giảm size tiêu đề */
+  }
   body {
     flex-direction: column;
     text-align: center;
@@ -88,7 +91,7 @@ h3 {
   }
 
   .container {
-    max-width: 95%;
+    max-width: 90%;
     padding: 20px;
     box-shadow: none;
   }
@@ -96,6 +99,18 @@ h3 {
   .avt_image {
     width: 100px;
     height: 100px;
+  }
+
+  .avatar img {
+    width: 100px; /* Giảm kích thước ảnh */
+    height: 100px;
+    object-fit: cover; /* Giữ tỷ lệ ảnh */
+  }
+
+  .button {
+    width: 100%; /* Làm rộng nút để dễ bấm */
+    padding: 12px;
+    font-size: 16px; /* Cỡ chữ dễ đọc hơn */
   }
 
   .social_links a {
