@@ -79,3 +79,41 @@ h3 {
 .social_links span {
   text-align: center;
 }
+
+/* Điều chỉnh layout trên màn hình nhỏ hơn 768px (điện thoại) */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column; /* Sắp xếp nội dung theo chiều dọc */
+    padding: 10px;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: none; /* Giảm hiệu ứng bóng đổ */
+  }
+
+  .avt {
+    padding: 10px 0;
+  }
+
+  .avt_image {
+    width: 100px;
+    height: 100px;
+    max-width: 80%;
+  }
+
+  .social_links a {
+    padding: 8px 40px; /* Thu nhỏ nút bấm */
+    font-size: 14px;
+  }
+
+  .social_links ul {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-size: contain; /* Hiển thị ảnh nền mà không bị cắt */
+  }
+}
