@@ -97,12 +97,14 @@ h3 {
   }
 
   .avt_image {
-    width: 110px;
-    height: 110px;
-    max-width: none;
+    width: 110px !important;
+    height: 110px !important;
+    max-width: none !important;
     aspect-ratio: 1/1;
     display: block;
     margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
   }
 
   .social_links ul {
