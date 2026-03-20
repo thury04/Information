@@ -12,10 +12,10 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 80%;
   border-radius: 15px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-  background-color: #ffeae3;
+  background-color: #ffeae37a;
 }
 .avt {
   text-align: center;
@@ -43,7 +43,7 @@ h3 {
 .social_links a {
   display: block;
   margin: 5px 10px;
-  padding: 10px 90px;
+  padding: 10px 80px;
   font-size: 16px;
   text-decoration: none;
   color: white;
@@ -79,6 +79,12 @@ h3 {
   text-align: center;
 }
 
+@media screen and (max-width: 300px) {
+  .social_links ul {
+    padding: 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     display: block;
@@ -90,8 +96,6 @@ h3 {
     max-width: 350px;
     margin: 20px auto;
     padding: 20px 10px;
-
-    background-color: #ffeae3; /* giữ giống desktop */
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
   }
@@ -107,14 +111,12 @@ h3 {
   }
 
   .social_links ul {
-    padding: 20px 0;
+    padding: 20px;
   }
 
   .social_links a {
-    width: 100%;
-    max-width: 260px; /* giống desktop */
+    max-width: 260px;
     margin: 10px auto;
-    padding: 10px;
     font-size: 14px;
   }
 }
